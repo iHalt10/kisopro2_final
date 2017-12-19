@@ -11,7 +11,7 @@ case Rails.env
 end
 Redis.current.ping
 
-$GameRegister = Mutex.new
+$MatchUpRegister = Mutex.new
 $PreRegister = {
                     "iswaiting" => false,
                     "game_key"  => "",
